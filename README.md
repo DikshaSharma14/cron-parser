@@ -41,7 +41,7 @@ a) common attributes among different fields are
 Clone the repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/your-username/cron-parser.git
+git clone https://github.com/DikshaSharma14/cron-parser.git
 cd cron-parser
 ```
 
