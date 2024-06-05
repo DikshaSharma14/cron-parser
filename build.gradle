@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+    id ("application")
+}
+
+application {
+    mainClassName = 'deliveroo.cron.CronParser'
+}
+
+group = 'deliveroo.cron'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test{
+    useJUnitPlatform()
+    testLogging{
+        events "passed", "skipped", "failed"
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'deliveroo.cron.CronParser'
+        )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    archiveFileName = 'deliveroo-cron-parser.jar'
+    destinationDirectory = file("$buildDir/libs")
+}
+
+build.dependsOn jar
