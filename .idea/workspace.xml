@@ -4,40 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0531fc5-2d8f-4e21-aa35-9370446d7798" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-cron-parser.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run-crone-parser.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/CronParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/exceptions/InvalidFieldValueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/parsers/CommandParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/parsers/DayOfMonthFieldParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/parsers/DayOfWeekFieldParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/parsers/FieldParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/parsers/HourFieldParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/parsers/MinuteFieldParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/parsers/MonthFieldParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/parsers/SpecialCharacterParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/util/CronParserUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/deliveroo/cron/CronParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/deliveroo/cron/parsers/DayOfMonthFieldParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/deliveroo/cron/parsers/DayOfWeekFieldParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/deliveroo/cron/parsers/HourFieldParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/deliveroo/cron/parsers/MinuteFieldParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/deliveroo/cron/parsers/MonthFieldParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/deliveroo/cron/parsers/SpecialCharacterParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/deliveroo/cron/util/CronParserUtilTest.java" afterDir="false" />
+    <list default="true" id="d0531fc5-2d8f-4e21-aa35-9370446d7798" name="Changes" comment="Added cron parser implementation.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/parsers/YearFieldParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deliveroo/cron/CronParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/CronParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deliveroo/cron/util/CronParserUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deliveroo/cron/util/CronParserUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,41 +32,53 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2hS5DLPEqtkZhO83RxD4QjASYZr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.SpecialCharacterParserTest.executor": "Run",
-    "Gradle.Tests in 'deliveroo.cron'.executor": "Run",
-    "Gradle.cron-parser [:CronParser.main()].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/playground/deliveroo/cron-parser",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/playground/deliveroo/cron-parser/src/main/java/deliveroo/cron/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.SpecialCharacterParserTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'deliveroo.cron'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.cron-parser [:CronParser.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/playground/deliveroo/cron-parser&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/playground/deliveroo/cron-parser/src/main/java/deliveroo/cron/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="deliveroo.cron.parsers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\playground\deliveroo\cron-parser" />
       <recent name="C:\playground\deliveroo\cron-parser\src\test\java" />
@@ -191,11 +174,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717574518306</updated>
-      <workItem from="1717574519358" duration="3046000" />
+      <workItem from="1717574519358" duration="11744000" />
+      <workItem from="1717851191920" duration="81000" />
     </task>
+    <task id="LOCAL-00001" summary="Added cron parser implementation.">
+      <option name="closed" value="true" />
+      <created>1717580463571</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717580463571</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added cron parser implementation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added cron parser implementation." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/deliveroo/cron/parsers/SpecialCharacterParser.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
